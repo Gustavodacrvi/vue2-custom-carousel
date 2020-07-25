@@ -1,6 +1,6 @@
 {
   "name": "vue2-custom-carousel",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "author": "Gustavo da Cruz Vieira",
   "description": "The simplest and most lightweight carousel ever, made with flexbox and CSS \"scroll-snap-type\" and \"scroll-behavior\" for smooth scrolling.",
   "keywords": ["Vue.js", "Vue2", "Vue", "carousel", "slider", "component", "customizable", "responsive", "flexbox", "scroll-snap-type", "scroll-behavior"],
@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/Gustavodacrvi/vue2-custom-carousel"
   },
-  "main": "dist/vue2-custom-carousel.umd.js",
+  "main": "dist/vue2-custom-carousel.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-package": "vue-cli-service build --target lib --name vue2-custom-carousel ./src/index.js --mode production",
