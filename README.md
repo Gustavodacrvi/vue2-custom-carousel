@@ -68,7 +68,7 @@ We can easily add button navigators using this code and doing the proper positio
 }
 ```
 
-![Pagination Example](https://github.com/Gustavodacrvi/vue2-custom-carousel/blob/assets/screenshots/example1.gif)
+![Navigation Buttons](https://github.com/Gustavodacrvi/vue2-custom-carousel/blob/assets/screenshots/example2.gif)
 
 
 ## Pagination Template Slot Props
@@ -177,5 +177,5 @@ You can find more information [here](https://css-tricks.com/how-to-make-a-css-on
 }
 ```
 
-![Pagination Example](https://github.com/Gustavodacrvi/vue2-custom-carousel/blob/assets/screenshots/example3.gif)
+![CSS Snap](https://github.com/Gustavodacrvi/vue2-custom-carousel/blob/assets/screenshots/example3.gif)
 
