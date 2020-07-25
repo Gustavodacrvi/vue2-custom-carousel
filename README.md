@@ -15,7 +15,7 @@ The simplest and most lightweight carousel ever, made with flexbox and CSS "scro
 
 ### Example
 
-Vue2-custom-carousel does not provide default CSS/template themes, you must build them yourself and wrapp them up in another component using your own styles.
+Vue2-custom-carousel does not provide default CSS/template themes, you must build them yourself and wrap them up in another component using your own styles.
 
 
 ```
@@ -89,7 +89,7 @@ We can easily add button navigators using this code and doing the proper positio
 
 ## Component Methods 
 
-| Method      | Paramenters | Description          |
+| Method      | Parameters | Description          |
 | ------------- |:-------------:|:-------------|
 | scroll      | (paginationIndex: number) | Goes to the given page index. |
 | next         | nothing | Goes to the next page. |
@@ -100,7 +100,7 @@ We can easily add button navigators using this code and doing the proper positio
 
 ### **calculated** event
 
-Runs every time the component calculates the data, runs on **mounted**, **updated**, on window resize and on container scroll event.
+Runs every time the component calculates the data, runs on **mounted**, **updated**, on window resize, and on container scroll event.
 
 #### Data
 ```
@@ -125,7 +125,7 @@ newScroll: number;
 
 ## Flexbox Usage
 
-The items are by default centralized using flexbox, this means **width** and **display** wont work as expected and you might want to use **flex-shrink: 0;**, you can overwrite the flexbox styles this way:
+The items are by default centralized using flexbox, this means **width** and **display** won't work as expected and you might want to use **flex-shrink: 0;**, you can overwrite the flexbox styles this way:
 
 ```
 <template>
