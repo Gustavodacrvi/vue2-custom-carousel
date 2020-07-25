@@ -36,7 +36,7 @@ Vue2-custom-carousel does not provide default CSS/template themes, you must buil
 
 In this example, we use the <Item/> functional component to display the items and the **pagination** template slot to display the dots, the template provides the active boolean which we use to differentiate the active element. The carousel uses **scroll-behavior: smooth;** for smooth scrolling.
 
-![Pagination Example](/screenshots/example1.gif)
+![Pagination Example](https://github.com/Gustavodacrvi/vue2-custom-carousel/blob/assets/screenshots/example1.gif)
 
 We can easily add button navigators using this code and doing the proper positioning.
 
@@ -68,7 +68,7 @@ We can easily add button navigators using this code and doing the proper positio
 }
 ```
 
-![Pagination Example](/screenshots/example2.gif)
+![Pagination Example](https://github.com/Gustavodacrvi/vue2-custom-carousel/blob/assets/screenshots/example1.gif)
 
 
 ## Pagination Template Slot Props
@@ -177,5 +177,5 @@ You can find more information [here](https://css-tricks.com/how-to-make-a-css-on
 }
 ```
 
-![Pagination Example](/screenshots/example3.gif)
+![Pagination Example](https://github.com/Gustavodacrvi/vue2-custom-carousel/blob/assets/screenshots/example3.gif)
 
