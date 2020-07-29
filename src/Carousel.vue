@@ -29,6 +29,12 @@
 <script>
 
 export default {
+  props: {
+    value: {
+      type: Number,
+      default: 0,
+    },
+  },
   data() {
     return {
       resizeTimeout: null,
@@ -37,7 +43,7 @@ export default {
       rightToggle: false,
       leftToggle: false,
       numberOfPages: 0,
-      active: 0,
+      active: this.value,
     }
   },
   created() {
@@ -66,12 +72,18 @@ export default {
         this.scroll(this.active - 1)
     },
     next() {
-      if (this.active !== this.numberOfPages)
+      if ((this.active + 1) !== this.numberOfPages)
         this.scroll(this.active + 1)
     },
     scroll(index) {
       if (index === this.active)
-        return;
+        return index;
+      if ((index + 1) > this.numberOfPages) {
+        index = this.numberOfPages - 1
+      }
+      if (index < 0) {
+        index = 0
+      }
       
       const div = this.$refs.wrapper
       const max = div.scrollWidth
@@ -83,6 +95,7 @@ export default {
 
       div.scrollLeft = newScroll
       this._calc()
+      return index
     },
     _onScroll() {
       if (this.scrollTimeout) {
@@ -111,6 +124,16 @@ export default {
       this.active = Math.ceil(div.scrollLeft / div.clientWidth) | 0
       this.rightToggle = (div.scrollLeft + div.clientWidth) < div.scrollWidth
       this.leftToggle = 0 !== div.scrollLeft
+    },
+  },
+  watch: {
+    value(val) {
+      const value = this.scroll(val)
+      if (value !== this.active)
+        this.active = value
+    },
+    active(val) {
+      this.$emit('input', val)
     },
   },
 }

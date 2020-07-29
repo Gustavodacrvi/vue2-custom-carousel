@@ -4,6 +4,7 @@
 * [Example](#example)
 * [Pagination Template Slot Props](#pagination-template-slot-props)
 * [Navigation Template Slot Props](#navigation-template-slot-props)
+* [Component Props](#component-props)
 * [Component Methods](#component-methods)
 * [Component Events](#component-events)
 * [Flexbox Usage](#flexbox-usage)
@@ -86,15 +87,20 @@ We can easily add button navigators using this code and doing the proper positio
 | show      | Will be false on the corners of the carousel. |
 | scroll         | Scroll trigger function, you should use it on the **@click.native='scroll'** event. |
 
+## Component Props
+
+| Property      | Description          |
+| ------------- |:-------------|
+| value/v-model | Sets and updates the current page. The current page will never be bigger than the number of pages or less than 0, that is, if set to a value greater than the number of carousel pages, **values** settles itself to the maximum value, **value** doesn't respond to negative values, instead, it sets itself back to 0. |
 
 ## Component Methods 
 
-| Method      | Parameters | Description          |
-| ------------- |:-------------:|:-------------|
-| scroll      | (paginationIndex: number) | Goes to the given page index. |
-| next         | nothing | Goes to the next page. |
-| previous         | nothing | Goes to the previous page. |
-| focus         | (elm: HTMLElement) | Focuses on the element. |
+| Method      | Parameters | Return Value | Description          |
+| ------------- |:-------------:|:-------------|:-------------|
+| scroll      | (paginationIndex: number) | finalPageIndex: number | Goes to the given page index. The return value will never be bigger than the number of pages or less than 0, that is, if set to a value greater than the number of carousel pages, it settles itself to the maximum value, **scroll** doesn't respond to negative values, instead, it sets itself back to 0. |
+| next         | nothing | nothing | Goes to the next page. |
+| previous         | nothing | nothing | Goes to the previous page. |
+| focus         | (elm: HTMLElement) | nothing | Focuses on the element. |
 
 ## Component Events
 
