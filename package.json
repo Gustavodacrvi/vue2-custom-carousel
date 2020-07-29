@@ -1,6 +1,6 @@
 {
   "name": "vue2-custom-carousel",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Gustavo da Cruz Vieira",
   "description": "The simplest and most lightweight carousel ever, made with flexbox and CSS \"scroll-snap-type\" and \"scroll-behavior\" for smooth scrolling.",
   "keywords": ["Vue.js", "Vue2", "Vue", "carousel", "slider", "component", "customizable", "responsive", "flexbox", "scroll-snap-type", "scroll-behavior"],

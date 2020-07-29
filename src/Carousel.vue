@@ -94,6 +94,7 @@ export default {
         newScroll = max
 
       div.scrollLeft = newScroll
+      this.$emit('trigger', newScroll)
       this._calc()
       return index
     },
@@ -124,6 +125,13 @@ export default {
       this.active = Math.ceil(div.scrollLeft / div.clientWidth) | 0
       this.rightToggle = (div.scrollLeft + div.clientWidth) < div.scrollWidth
       this.leftToggle = 0 !== div.scrollLeft
+
+      this.$emit('calculated', {
+        numberOfPages: this.numberOfPages;
+        activePage: this.active;
+        showRightNavigation: this.leftToggle;
+        showLeftNavigation: this.rightToggle;
+      })
     },
   },
   watch: {
