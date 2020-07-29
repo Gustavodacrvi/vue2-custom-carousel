@@ -127,10 +127,10 @@ export default {
       this.leftToggle = 0 !== div.scrollLeft
 
       this.$emit('calculated', {
-        numberOfPages: this.numberOfPages;
-        activePage: this.active;
-        showRightNavigation: this.leftToggle;
-        showLeftNavigation: this.rightToggle;
+        numberOfPages: this.numberOfPages,
+        activePage: this.active,
+        showRightNavigation: this.leftToggle,
+        showLeftNavigation: this.rightToggle,
       })
     },
   },
