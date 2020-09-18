@@ -46,7 +46,7 @@ export default {
       active: this.value,
     }
   },
-  created() {
+  mounted() {
     window.addEventListener('resize', this._resize)
   },
   beforeDestroy() {
